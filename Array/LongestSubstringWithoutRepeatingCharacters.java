@@ -3,8 +3,8 @@ package Array;
 import java.util.*;
 
 public class LongestSubstringWithoutRepeatingCharacters {
-    public static int longestSubstringWithoutRepeatingCharacters(String str){
-        HashSet<Character> characterHashSet = new HashSet<>();//map containing unique character counts
+    private static int longestSubstringWithoutRepeatingCharacters(String str){
+        HashSet<Character> characterHashSet = new HashSet<>();//set containing unique character counts
         int i=0;//start index
         int j=0;
         int max=Integer.MIN_VALUE;//variable index which will be incremented to traverse the string
