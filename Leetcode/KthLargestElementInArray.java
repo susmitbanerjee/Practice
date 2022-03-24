@@ -11,7 +11,7 @@ public class KthLargestElementInArray {
                 minHeap.remove();
             }
         }
-        return minHeap.remove();
+        return minHeap.remove();//
     }
 
     public static void main(String[] args) {
