@@ -11,7 +11,7 @@ public class ThompsonReuters {
     //list<persons> age
     public static void main(String[] args) {
         Person person1=new Person("Susmit",27);//
-        Person person2=new Person("Another",45);
+        Person person2=new Person("Another",45);//
         Person person3=new Person("ABC",27);
         List<Person> persons = new ArrayList<>();
         persons.add(person1);
