@@ -13,7 +13,7 @@ public class ThompsonReuters {
         Person person1=new Person("Susmit",27);//
         Person person2=new Person("Another",45);//
         Person person3=new Person("ABC",27);//
-        List<Person> persons = new ArrayList<>();
+        List<Person> persons = new ArrayList<>();//
         persons.add(person1);
         persons.add(person2);
         persons.add(person3);
