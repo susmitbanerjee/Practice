@@ -18,6 +18,9 @@ public class LinkedListDriver {
         System.out.println();
         System.out.println(LinkedListUtil.searchNode(linkedList, 7));
         System.out.println(LinkedListUtil.searchNode(linkedList, 8));
+        System.out.println("After reverse");
+        LinkedListUtil.reverseList(linkedList);
+        LinkedListUtil.printList(linkedList);
 
 
 

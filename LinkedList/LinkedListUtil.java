@@ -82,6 +82,19 @@ public class LinkedListUtil {
             while (temp != linkedList.head);
         }
     }
+    public static LinkedList reverseList(LinkedList linkedList){
+        Node prev=null;
+        Node current=linkedList.head;
+        Node next=null;
+        while(current!=null){
+            next=current.next;
+            current.next=prev;
+            prev=current;
+            current=next;
+        }
+        linkedList.head=prev;
+        return linkedList;
+    }
 
     public static void printList(LinkedList list) {
         Node curr_node = list.head;
