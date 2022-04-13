@@ -16,7 +16,7 @@ public class ThompsonReuters {
         List<Person> persons = new ArrayList<>();//
         persons.add(person1);//
         persons.add(person2);//
-        persons.add(person3);
+        persons.add(person3);//
         Map<Integer, List<Person>> resultMap = persons.stream().collect(Collectors.groupingBy(Person::getAge));
         resultMap.entrySet().forEach(entry -> {
             System.out.println(entry.getKey());
