@@ -21,7 +21,7 @@ public class ThompsonReuters {
         resultMap.entrySet().forEach(entry -> {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue().toString());
-        });
+        });//
     }
 
 
