@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class ThompsonReuters {
     //class person with name and age
     //list<persons> age
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         Person person1=new Person("Susmit",27);//
         Person person2=new Person("Another",45);//
         Person person3=new Person("ABC",27);//
