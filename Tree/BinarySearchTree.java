@@ -31,4 +31,24 @@ public class BinarySearchTree {
             inorderTraversal(root.right);
         }
     }
+    void preOrder(){
+        preOrderTraversal(root);
+    }
+    void preOrderTraversal(Node root){
+        if(root!=null){
+            System.out.print(root.key+"\t");
+            preOrderTraversal(root.left);
+            preOrderTraversal(root.right);
+        }
+    }
+    void postOrder(){
+        postOrderTraversal(root);
+    }
+    void postOrderTraversal(Node root){
+        if(root!=null){
+            postOrderTraversal(root.left);
+            postOrderTraversal(root.right);
+            System.out.print(root.key+"\t");
+        }
+    }
 }

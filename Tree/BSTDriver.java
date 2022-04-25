@@ -12,5 +12,11 @@ public class BSTDriver {
         tree.insertNode(80);
 
         tree.inorder();
+        System.out.println();
+        System.out.println("---------------------------------------");
+        tree.preOrder();
+        System.out.println();
+        System.out.println("---------------------------------------");
+        tree.postOrder();
     }
 }
