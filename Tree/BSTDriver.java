@@ -18,5 +18,11 @@ public class BSTDriver {
         System.out.println();
         System.out.println("---------------------------------------");
         tree.postOrder();
+        System.out.println();
+        System.out.println("Height of the tree: ");
+        System.out.println(tree.heightOfTree());
+        System.out.println();
+        System.out.println("---------------------------------------");
+        tree.levelOrderTraversal();
     }
 }
