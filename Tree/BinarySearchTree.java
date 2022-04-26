@@ -51,4 +51,36 @@ public class BinarySearchTree {
             System.out.print(root.key+"\t");
         }
     }
+    int heightOfTree(){
+        return height(root);
+    }
+    int height(Node root){
+        if(root==null){
+            return 0;
+        }else{
+            int lheight=height(root.left);
+            int rheight=height(root.right);
+
+            if(lheight>rheight){
+                return lheight+1;
+            }else
+                return rheight+1;
+        }
+    }
+    void printCurrentLevel(Node root, int level){
+        if(root==null)
+            return;
+        if(level==1)
+            System.out.print(root.key+"\t");
+        else if(level>1){
+            printCurrentLevel(root.left,level-1);
+            printCurrentLevel(root.right,level-1);
+        }
+    }
+    void levelOrderTraversal(){
+        int height=height(root);
+        for(int i=0;i<height;i++){
+            printCurrentLevel(root,i);
+        }
+    }
 }
