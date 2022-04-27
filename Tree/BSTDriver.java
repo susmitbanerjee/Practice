@@ -24,5 +24,6 @@ public class BSTDriver {
         System.out.println();
         System.out.println("---------------------------------------");
         tree.levelOrderTraversal();
+        System.out.println("---------------------------------------");
     }
 }
