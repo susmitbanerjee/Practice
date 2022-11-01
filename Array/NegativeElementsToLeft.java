@@ -18,8 +18,8 @@ public class NegativeElementsToLeft {
                 resultIndex++;
             }
         }
-        System.arraycopy(result, 0, arr, 0, n);
-        System.out.println(Arrays.toString(arr));
+        //System.arraycopy(result, 0, arr, 0, n);
+        System.out.println(Arrays.toString(result));
     }
 
     public static void main(String[] args) {
