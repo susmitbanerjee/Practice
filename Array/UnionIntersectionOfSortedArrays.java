@@ -11,11 +11,13 @@ public class UnionIntersectionOfSortedArrays {
             if(a[i]<b[j]){
                 result[k]=a[i];
                 i++;
+                k++;
             }else{
                 result[k]=b[j];
                 j++;
+                k++;
             }
-            k++;
+
         }
         while(i<n){
             result[k]=a[i];
