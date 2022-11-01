@@ -1,4 +1,4 @@
-package Array;
+package Fundamentals;
 
 public final class ImmutableClass {
     private final String currency;
