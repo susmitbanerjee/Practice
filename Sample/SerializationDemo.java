@@ -8,11 +8,9 @@ public class SerializationDemo {
     public static void main(String[] args) {
         try {
             SampleClass sampleClass = new SampleClass("Susmit", 27);
-            FileOutputStream fileOutputStream = new FileOutputStream("Sample.txt");
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("Sample.txt"));
             objectOutputStream.writeObject(sampleClass);
-            fileOutputStream.flush();
-            fileOutputStream.close();
+            objectOutputStream.close();
             System.out.println("Success");
         } catch (Exception e) {
             e.printStackTrace();
