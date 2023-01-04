@@ -10,6 +10,7 @@ public class DeSerializationDemo {
             SampleClass sampleClass = (SampleClass) objectInputStream.readObject();
             System.out.println(sampleClass.toString());
             objectInputStream.close();
+            Integer.parseInt(sampleClass.getName());
         }catch(Exception e){
             e.printStackTrace();
         }
