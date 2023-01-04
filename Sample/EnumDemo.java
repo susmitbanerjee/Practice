@@ -3,16 +3,8 @@ package Sample;
 public class EnumDemo {
 
     enum Developer{
-        BACKEND{
-            String getDeveloper(){
-                return "BACKEND-1";
-            }
-        },
-        FRONTEND{
-            String getDeveloper(){
-                return "FRONTEND";
-            }
-        }
+        BACKEND,
+        FRONTEND
     }
 
     public static void main(String[] args) {
