@@ -1,9 +1,6 @@
 package Fundamentals;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ComparatorExample {
     static class Student {
@@ -36,6 +33,13 @@ public class ComparatorExample {
         studentArrayList.add(a);
         studentArrayList.add(b);
         studentArrayList.add(c);
-        //Collections.sort(studentArrayList, new AgeComparator());
+        Collections.sort(studentArrayList, new AgeComparator());
+        Iterator itr=studentArrayList.iterator();
+        while(itr.hasNext()){
+            ComparableClassExample.Student st=(ComparableClassExample.Student)itr.next();
+            System.out.print(st.toString());
+            System.out.println();
+            System.out.println("-------------------------------");
+        }
     }
 }
