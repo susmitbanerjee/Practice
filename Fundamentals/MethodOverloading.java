@@ -12,13 +12,5 @@ public class MethodOverloading {
     public static void main(String[] args) {
         System.out.println(sum(10, 5));
         System.out.println(sum(10, 5, 5));
-/*
-    static int sum(String str){ return 1;}
-    public static void main(String[] args) {
-        System.out.println(sum(10,5));
-        System.out.println(sum(10,5,5));
-        System.out.println(sum(null));
-
-    }*/
     }
 }

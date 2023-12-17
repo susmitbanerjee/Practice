@@ -1,5 +1,7 @@
 package ProductCompanies;
 
+import java.util.PriorityQueue;
+
 class Node1{
     int data;
     Node1 left,right;
@@ -38,8 +40,10 @@ public class LeftViewBinaryTree {
         tree.root.right = new Node1(30);
         tree.root.right.left = new Node1(25);
         tree.root.right.right = new Node1(40);
-        tree.printLeftView(tree.root,1);
+        //tree.printLeftView(tree.root,1);
         System.out.println("---------------------");
         tree.printRightView(tree.root,1);
     }
+    PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+
 }
