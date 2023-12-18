@@ -1,4 +1,4 @@
-package Array;
+package NeetCodeRoadMap;
 
 import java.util.Collections;
 import java.util.HashSet;
