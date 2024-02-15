@@ -43,7 +43,7 @@ public class PermutationSearch {
     }
 
     public static void main(String[] args) {
-        String s1 = "ab", s2 = "eidbaooo";
+        String s1 = "abc", s2 = "eidbaooo";
         System.out.println(checkInclusion(s1, s2));
     }
 }

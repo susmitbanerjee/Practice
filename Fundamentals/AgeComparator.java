@@ -10,11 +10,11 @@ class AgeComparator implements Comparator{
 
     @Override
     public int compare(Object o1, Object o2) {
-        ComparableClassExample.Student s1=(ComparableClassExample.Student)o1;
-        ComparableClassExample.Student s2=(ComparableClassExample.Student)o2;
-        if(((ComparableClassExample.Student) o1).number== ((ComparableClassExample.Student) o2).number)
+        Fundamentals.ComparableClassExample.Student s1=(Fundamentals.ComparableClassExample.Student)o1;
+        Fundamentals.ComparableClassExample.Student s2=(Fundamentals.ComparableClassExample.Student)o2;
+        if(((Fundamentals.ComparableClassExample.Student) o1).number== ((Fundamentals.ComparableClassExample.Student) o2).number)
             return 0;
-        else if(((ComparableClassExample.Student) o1).number> ((ComparableClassExample.Student) o2).number)
+        else if(((Fundamentals.ComparableClassExample.Student) o1).number> ((Fundamentals.ComparableClassExample.Student) o2).number)
             return 1;
         else
             return -1;

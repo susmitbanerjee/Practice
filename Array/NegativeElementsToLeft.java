@@ -7,13 +7,13 @@ public class NegativeElementsToLeft {
         int[] result = new int[n];
         int resultIndex=0;
         for(int i=0;i<n;i++){
-            if(arr[i]>0){
+            if(arr[i]<0){
                 result[resultIndex]=arr[i];
                 resultIndex++;
             }
         }
         for(int i=0;i<n;i++){
-            if(arr[i]<0){
+            if(arr[i]>0){
                 result[resultIndex]=arr[i];
                 resultIndex++;
             }

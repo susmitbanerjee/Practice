@@ -1,7 +1,9 @@
 package Leetcode;
 
+import java.lang.reflect.Array;
+
 public class MedianOfTwoArrays {
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static int[] findMedianSortedArrays(int[] nums1, int[] nums2) {
         int i=0;
         int j=0;
         int k=0;
@@ -28,10 +30,11 @@ public class MedianOfTwoArrays {
             j++;
             k++;
         }
-        if(arr.length%2!=0){
+        /*if(arr.length%2!=0){
             return arr[arr.length/2];
         }else
-            return (double)(arr[arr.length/2]+arr[(arr.length/2)-1])/2;
+            return (double)(arr[arr.length/2]+arr[(arr.length/2)-1])/2;*/
+        return arr;
     }
 
     public static void main(String[] args) {
