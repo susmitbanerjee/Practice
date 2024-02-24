@@ -2,6 +2,7 @@ package Tree;
 
 public class BSTDriver {
     public static void main(String[] args) {
+        int k=3;
         BinarySearchTree tree = new BinarySearchTree();
         tree.insertNode(50);
         tree.insertNode(30);
@@ -25,5 +26,7 @@ public class BSTDriver {
         System.out.println("---------------------------------------");
         tree.levelOrderTraversal();
         System.out.println("---------------------------------------");
+
+        System.out.println(k+"th highest node is:"+KthHighestNode.kthHighest(tree.root, k));
     }
 }
