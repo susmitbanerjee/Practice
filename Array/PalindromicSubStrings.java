@@ -18,7 +18,7 @@ public class PalindromicSubStrings {
     }
 
     public static void main(String[] args) {
-        String str = "aabbccddccbbaa";
+        String str = "Susmit";
         System.out.println(countPalindromicSubstrings(str));
     }
 }
