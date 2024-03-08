@@ -3,7 +3,7 @@ package Array;
 public class Anagram {
     public static void main(String[] args) {
         String s1="anagram";
-        String s2="anagrma";
+        String s2="aangrma";
         int j= s2.length()-1;
         int count=0;
         if(s1.length()!=s2.length()){
