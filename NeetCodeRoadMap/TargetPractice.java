@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class MaxSteal {
+public class TargetPractice {
     public static int maxSteal(int[] arr) {
         int n = arr.length;
         if (n == 0)
