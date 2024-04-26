@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
 
 public class ExecutorServiceDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ExecutorClass executorClass = new ExecutorClass("WHATSAPP");
+        Sample.ExecutorClass executorClass = new Sample.ExecutorClass("WHATSAPP");
 
         ExecutorService executorService = Executors.newFixedThreadPool(4);
 
