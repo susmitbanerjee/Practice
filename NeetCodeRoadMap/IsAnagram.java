@@ -21,5 +21,6 @@ public class IsAnagram {
         String s = "susmit";
         String t = "abcdef";
         System.out.println(isAnagram(s,t));
+
     }
 }
