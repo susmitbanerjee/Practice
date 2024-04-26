@@ -60,6 +60,22 @@ public class TargetPractice {
         return total;
     }
 
+    static boolean isAnagram(String s, String t) {
+        if (s.length() != t.length())
+            return false;
+
+        int[] store = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            store[s.charAt(i) - 'a']++;
+            store[t.charAt(i) - 'a']--;
+        }
+
+        for (int n : store) if (n != 0) return false;
+
+        return true;
+    }
+
     public static void main(String[] args) {
         int[] arr = new int[]{2, 21, 4, 7, 17, 35};
         System.out.println(maxSteal(arr));
@@ -67,5 +83,6 @@ public class TargetPractice {
         System.out.println(validParentheses(s));
         int[] arr1 = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
         System.out.println(trapRainWater(arr1));
+        System.out.println(isAnagram("susmit", "timsus"));
     }
 }
