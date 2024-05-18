@@ -1,7 +1,7 @@
 package LinkedList;
 
 public class LinkedListUtil {
-    public static LinkedList insertAtBegining(LinkedList linkedList, int data) {
+    public static LinkedList.LinkedList insertAtBegining(LinkedList linkedList, int data) {
         Node new_node = new Node(data);
         new_node.next = null;
 

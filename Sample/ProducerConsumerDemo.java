@@ -2,7 +2,7 @@ package Sample;
 
 public class ProducerConsumerDemo {
     public static void main(String[] args) throws InterruptedException {
-        final ProducerConsumer producerConsumer=new ProducerConsumer();
+        final Sample.ProducerConsumer producerConsumer=new Sample.ProducerConsumer();
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {

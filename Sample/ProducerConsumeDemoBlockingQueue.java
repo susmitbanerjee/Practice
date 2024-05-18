@@ -8,8 +8,8 @@ import java.util.concurrent.BlockingQueue;
 public class ProducerConsumeDemoBlockingQueue {
     public static void main(String[] args) {
         BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue<Integer>(4);
-        Producer producer = new Producer(blockingQueue);
-        Consumer consumer = new Consumer(blockingQueue);
+        Sample.Producer producer = new Sample.Producer(blockingQueue);
+        Sample.Consumer consumer = new Sample.Consumer(blockingQueue);
 
         Thread t1 = new Thread(producer);
         Thread t2 = new Thread(consumer);

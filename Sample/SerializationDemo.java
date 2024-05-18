@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 public class SerializationDemo {
     public static void main(String[] args) {
         try {
-            SampleClass sampleClass = new SampleClass("Susmit", 27);
+            Sample.SampleClass sampleClass = new Sample.SampleClass("Susmit", 27);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("Sample.txt"));
             objectOutputStream.writeObject(sampleClass);
             objectOutputStream.close();
