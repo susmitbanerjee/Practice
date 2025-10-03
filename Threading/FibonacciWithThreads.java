@@ -1,6 +1,5 @@
 package Threading;
 
-import sun.awt.windows.ThemeReader;
 
 public class FibonacciWithThreads {
     int a=0,b=1,c=0;
